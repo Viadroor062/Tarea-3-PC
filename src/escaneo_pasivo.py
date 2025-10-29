@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 
 #  Configuración
-SHODAN_API_KEY = "dLJXZ0ADmO9GS3zO2PQTlyDOTBbmRqmO" 
+SHODAN_API_KEY = "" 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 #  Extrae dominio limpio desde URL
@@ -109,4 +109,5 @@ def ejecutar_footprint(url):
 # CLI
 def main():
     url = input("Ingresa el URL: ")
+
     ejecutar_footprint(url)
