@@ -1,0 +1,8 @@
+El puerto: 21 (FTP) está CERRADO
+El puerto: 22 (SSH) está ABIERTO
+El puerto: 25 (SMTP) está CERRADO
+El puerto: 80 (HTTP) está ABIERTO
+El puerto: 110 (POP3) está CERRADO
+El puerto: 143 (IMAP) está CERRADO
+El puerto: 443 (HTTPS) está CERRADO
+El puerto: 3389 (RDP) está CERRADO
