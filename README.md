@@ -6,7 +6,7 @@ Esta actividad es una herramienta diseñada para realizar tareas de reconocimien
 
 Este script contiene un módulo de **escaneo activo** (`Escaneo_activo.py`).
 
-* **El menú de opciones del escaneo activo (opción 2 del menú) solicita una segunda confirmación explicita antes de realizar el escaneo. Para proseguir se debe de introducir la "y" minúscula y para abortar se debe de introducir cualquier otro caracter**
+* **El menú de opciones del escaneo activo (opción 2 del menú) solicita una segunda confirmación explícita antes de realizar el escaneo. Para proseguir se debe de introducir la "y" minúscula y para abortar se debe de introducir cualquier otro caracter.**
 * Ejecutar escaneos activos (como escaneo de puertos, ICMP, o fingerprinting) contra sistemas para los cuales **no tienes autorización explícita** es ilegal en muchas jurisdicciones y viola los términos de servicio de la mayoría de los proveedores de hosting.
 * **Usa esta herramienta bajo tu propio riesgo** y exclusivamente en entornos controlados (como laboratorios personales) o contra objetivos que te hayan dado permiso explícito y por escrito.
 
@@ -31,7 +31,7 @@ Para que el proyecto funcione, necesitas instalar varias librerías de Python.
     beautifulsoup4
     ```
 
-2.  Librerías utilizadas en el escaneo pasivo
+2.  Librerías utilizadas en el escaneo activo
 
     ```
     socket
@@ -46,7 +46,7 @@ Para que el proyecto funcione, necesitas instalar varias librerías de Python.
 
 ## 🚀 Cómo Usar
 
-El script principal es `main.py`. Para ejecutar el programa, simplemente corre el siguiente script:
+El script principal es `main.py`. Para ejecutar el programa, simplemente corre desde la terminal el siguiente script:
 
 ```
 python main.py
