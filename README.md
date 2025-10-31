@@ -1,6 +1,6 @@
 # Tarea 3 (Reconocimiento Pasivo y Activo)
 
-Esta actividad es una herramienta diseñada para realizar tareas de reconocimiento de un objetivo web. Está dividido en dos módulos principales: escaneo pasivo y escaneo activo.
+Esta actividad es una herramienta diseñada para realizar tareas de reconocimiento de un objetivo web. Está dividido en dos módulos principales: escaneo_pasivo.py y Escaneo_activo.py
 
 ## ⚠️ ADVERTENCIA DE SEGURIDAD IMPORTANTE
 
