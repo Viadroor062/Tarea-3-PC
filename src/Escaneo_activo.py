@@ -1,4 +1,5 @@
 import socket, nmap, json
+from datetime import datetime
 from scapy.all import IP, ICMP, sr1
 
 def enviar_pkt (host):
@@ -28,7 +29,7 @@ def comprobar_puertos(puertos, host):
         else:
             a = f"El puerto: {puerto} ({valor}) está CERRADO"
             print(a)
-        with open ("puertos_abiertos.txt", "a", encoding = "UTF-8") as file:
+        with open (f"puertos_abiertos_{MT}.txt", "a", encoding = "UTF-8") as file:
             file.write(a + "\n")
         enchufe.close()
     print("--------------------------------------")
@@ -40,7 +41,7 @@ def fingerP(host, pa):
     print("Iniciando escaneo...")
     a = escaner.scan(hosts=host, ports=pa_completo, arguments="-sV")
     print(f"Escaneo completo para los puertos: {pa_completo}\n")
-    with open ("reporte_fingerprinting_activo.json", "w") as file:
+    with open (f"Reporte_fingerprinting_activo_{MT}.json", "w") as file:
         json.dump(a, file, indent=4)
 
 def validacion(n):
@@ -97,6 +98,9 @@ puertos = {
     3389:"RDP" #Escritorio Remoto
     }
 host = "scanme.nmap.org"
+fecha = str(datetime.now())
+MT = fecha.replace(":", "-")
+
 
 
 
