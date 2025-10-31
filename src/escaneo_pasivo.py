@@ -7,6 +7,7 @@ import logging
 import argparse
 from urllib.parse import urlparse
 import requests
+from datetime import datetime
 from bs4 import BeautifulSoup
 
 
@@ -103,11 +104,12 @@ def ejecutar_footprint(url):
         "shodan": shodan_info,
         "subdominios": subdominios
     }
-
-    guardar_reporte("Reporte_escaneo_pasivo.json", reporte)
+    fecha = str(datetime.now())
+    MT = fecha.replace(":", "-")
+    guardar_reporte(f"Reporte_escaneo_pasivo_{MT}.json", reporte)
 
 # CLI
 def main():
     url = input("Ingresa el URL: ")
-
     ejecutar_footprint(url)
+
